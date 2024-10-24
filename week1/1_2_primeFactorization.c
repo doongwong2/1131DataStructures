@@ -3,6 +3,7 @@
 #include<string.h>
 #include<stdbool.h>
 
+
 int main()
 {
 	int input;
