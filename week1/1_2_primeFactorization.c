@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<math.h>
-#include<cmath>
-#include<iomanip>
+#include<string.h>
+#include<stdbool.h>
+
 
 int main()
 {
