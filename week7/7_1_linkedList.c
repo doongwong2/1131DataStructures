@@ -1,3 +1,4 @@
+//this is still in work.
 #define _CRT_SECURE_NO_WARNINGS
 #include<stdio.h>
 
@@ -18,11 +19,11 @@ void insert(listPointer* first, listPointer x)
     }
     temp->data = 50;
     if (*first) {             //Case 1
-        temp¡÷link = x¡÷link;
-        x¡÷link = temp;
+        tempï¿½ï¿½link = xï¿½ï¿½link;
+        xï¿½ï¿½link = temp;
     }
     else {                    //Case 2
-        temp¡÷link = NULL;
+        tempï¿½ï¿½link = NULL;
         *first = temp;
     }
 }
@@ -31,16 +32,16 @@ void delete(listPointer* first, listPointer trail, listPointer x)
 {
     /* delete x from the list, trail is the preceding node and *first is the front of the list */
     if (trail)         // Case 1
-        trail¡÷link = x¡÷link;
+        trailï¿½ï¿½link = xï¿½ï¿½link;
     else              // Case 2
-        *first = (*first)¡÷link;
+        *first = (*first)ï¿½ï¿½link;
     free(x);
 }
 
 void printList(listPointer first)
 {
-    printf(¡§The list contains : ¡§);
-    for (; first; first = first¡÷link)
-        printf(¡§ % 4d¡¨, first¡÷data);
-    printf(¡§\n¡¨);
+    printf(ï¿½ï¿½The list contains : ï¿½ï¿½);
+    for (; first; first = firstï¿½ï¿½link)
+        printf(ï¿½ï¿½ % 4dï¿½ï¿½, firstï¿½ï¿½data);
+    printf(ï¿½ï¿½\nï¿½ï¿½);
 }
